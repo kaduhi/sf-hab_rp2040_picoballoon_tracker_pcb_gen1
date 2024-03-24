@@ -1,0 +1,3 @@
+[submodule "firmware/LightAPRS-W-2.0"]
+	path = firmware/LightAPRS-W-2.0
+	url = https://github.com/kaduhi/LightAPRS-W-2.0.git
