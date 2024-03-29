@@ -7,7 +7,7 @@
 
 <img src="images/IMG_9520.jpg" width="202"> <img src="images/IMG_0107.jpg" width="202"> <img src="images/IMG_0031.jpg" width="202"> <img src="images/IMG_4776.jpg" width="202">
 
-This [RP2040](https://www.raspberrypi.com/products/rp2040/) based PicoBalloon Tracker PCB gen1 project is indended for ***STEM*** *(Science, Technology, Engineering and Mathematics)* educational purposes.
+This [RP2040](https://www.raspberrypi.com/products/rp2040/) based PicoBalloon Tracker PCB gen1 project is intended for ***STEM*** *(Science, Technology, Engineering and Mathematics)* educational purposes.
 
 ## Documenation, Instruction and Q&A
 Please refer to the [Wiki](https://github.com/kaduhi/sf-hab_rp2040_picoballoon_tracker_pcb_gen1/wiki)
@@ -32,7 +32,7 @@ git submodule init
 git submodule update
 ```
 
-The original LightAPRS-W 2.0 tracker uses two different chips (Si5351A and Si4463) for supporting both HF and VHF bands, but my ported version only uses the Si5351A/MS5351 to generate both HF (WSPR in 20m band) and VHF (APRS in 2m band).
+The original LightAPRS-W 2.0 tracker uses two different chips (Si5351A and Si4463) for supporting both HF and VHF bands, but my ported version only uses the Si5351A/MS5351M to generate both HF (WSPR in 20m band) and VHF (APRS in 2m band).
 
 ## Project Background and History
 **Oct 2021** - attend to [SF-HAB (San Francisco Bay Area High Altitude Balloon) group](https://sf-hab.org/)'s Amateur Radio Pico Balloon presentation at Pacificon 2021, then joined the group
