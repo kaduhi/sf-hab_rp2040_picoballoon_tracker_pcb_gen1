@@ -1,13 +1,13 @@
 # sf-hab_rp2040_picoballoon_tracker_pcb_gen1
 [sf-hab.org](https://sf-hab.org/) RP2040 based PicoBalloon Tracker PCB generation 1 for **STEM education**, designed by AG6NS
 
+This [RP2040](https://www.raspberrypi.com/products/rp2040/) based PicoBalloon Tracker PCB gen1 project is intended for ***STEM*** *(Science, Technology, Engineering and Mathematics)* educational purposes.
+
 [<img src="pcb/tracker/v0.4/SCH_Schematic1_2023-09-11.png" width="600">](pcb/tracker/v0.4/SCH_Schematic1_2023-09-11.pdf) <img src="pcb/tracker/v0.3/3D_PCB1_2023-05-23_top.png" width="216">
 
 <img src="images/IMG_0131.jpg" width="202"> <img src="images/IMG_0106.jpg" width="202"> <img src="images/IMG_0017.jpg" width="202"> <img src="images/IMG_0728.jpg" width="202">
 
 <img src="images/IMG_9520.jpg" width="202"> <img src="images/IMG_0107.jpg" width="202"> <img src="images/IMG_0031.jpg" width="202"> <img src="images/IMG_4776.jpg" width="202">
-
-This [RP2040](https://www.raspberrypi.com/products/rp2040/) based PicoBalloon Tracker PCB gen1 project is intended for ***STEM*** *(Science, Technology, Engineering and Mathematics)* educational purposes.
 
 ## Documenation, Instruction and Q&A
 Please refer to the [Wiki](https://github.com/kaduhi/sf-hab_rp2040_picoballoon_tracker_pcb_gen1/wiki)
@@ -21,7 +21,7 @@ The answers to these questions will also be added to the [Wiki](https://github.c
 ## How to open the ".eprj" CAD project file
 When I started designing this PCB, I asked another member "What CAD software should I use?" and the answer was [**EasyEDA**](https://easyeda.com). I had only used Eagle before for designing my PCBs, so I had to learn it just for this project. The biggest reason we chose EasyEDA is because it is easy to link to the JLCPCB parts library. We only use [JLCPCB](https://jlcpcb.com) for [PCB fabrication](https://jlcpcb.com/capabilities/pcb-capabilities) and [PCB assembly service](https://jlcpcb.com/capabilities/pcb-assembly-capabilities), we thought this was a good decision at the time...
 
-Anyway, this PCB was designed with a specific version of the [**EasyEDA Pro**](https://pro.easyeda.com) --- [***easyeda-pro-linux-x64-1.8.39***](https://image.easyeda.com/files/easyeda-pro-linux-x64-1.8.39.zip). You can download it [Here](https://image.easyeda.com/files/easyeda-pro-linux-x64-1.8.39.zip).
+Anyway, this PCB was designed with a specific version of the [**EasyEDA Pro**](https://pro.easyeda.com) --- [***easyeda-pro-linux-x64-1.8.39***](https://image.easyeda.com/files/easyeda-pro-linux-x64-1.8.39.zip). You can download it from [Here](https://image.easyeda.com/files/easyeda-pro-linux-x64-1.8.39.zip).
 
 ## Firmware (Software)
 Since my PicoBalloon firmware is still half baked, I have ported the existing well known PicoBalloon tracker firmware --- [**LightAPRS-W-2.0**](https://github.com/kaduhi/LightAPRS-W-2.0/tree/port_to_ag6ns_rp2040_picoballoon_tracker) to this Tracker board.
@@ -33,6 +33,11 @@ git submodule update
 ```
 
 The original LightAPRS-W 2.0 tracker uses two different chips (Si5351A and Si4463) for supporting both HF and VHF bands, but my ported version only uses the Si5351A/MS5351M to generate both HF (WSPR in 20m band) and VHF (APRS in 2m band).
+
+## License
+[creative commons CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+[<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="200">](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt)
 
 ## Project Background and History
 **Oct 2021** - attend to [SF-HAB (San Francisco Bay Area High Altitude Balloon) group](https://sf-hab.org/)'s Amateur Radio Pico Balloon presentation at Pacificon 2021, then joined the group
